@@ -1,0 +1,10 @@
+{
+    "name": "Dichill",
+    "level": 1,
+    "exp": 0,
+    "weapon": "Axe",
+    "armor": "basic",
+    "epilogue": 2,
+    "health": 100,
+    "potion": 1
+}
