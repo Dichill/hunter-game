@@ -1,12 +1,12 @@
 {
-    "name": "Churchill",
-    "level": 9,
+    "name": "Dichill",
+    "level": 2,
     "exp": 0,
-    "weapon": "Bow of Apollo",
+    "weapon": "Emerald Axe",
     "epilogue": 2,
-    "health": 100,
-    "potion": 21,
-    "type": "Bow",
-    "monster_killed": 21,
-    "total_dmgs": 796
+    "health": 83,
+    "potion": 1,
+    "type": "Axe",
+    "monster_killed": 2,
+    "total_dmgs": 45
 }
