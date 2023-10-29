@@ -194,7 +194,7 @@ class Game:
     # Shows all the Menu when you found a monster
     def hunter_menu(self):
         print(Fore.GREEN + "What do you want to do?")
-        print(Fore.CYAN + "[1] ATTACK")
+        print(Fore.CYAN + "[1] FIGHT")
         print(Fore.YELLOW + "[2] FLEE")
         print(Fore.RED + "[3] QUIT")
         if self.current_level >= 5:
@@ -224,7 +224,7 @@ class Game:
 
         # Simple Menu
         print(Fore.LIGHTRED_EX + f"What will you do?")
-        print(Fore.WHITE + "[1] FIGHT")
+        print(Fore.WHITE + "[1] ATTACK")
         print(f"[2] USE POTION ({self.current_potion}x)")
         print("[3] FLEE")
 
@@ -365,7 +365,7 @@ class Game:
         did_user_flee = False
 
         while monster_hp > 0 and self.current_health > 0:
-            os.system("cls")
+            utils.clearScreen()
 
             player_action = self.fight_dashboard(current_monster, monster_hp)
 
@@ -417,7 +417,7 @@ class Game:
                 break
 
         if self.current_health > 0 and did_user_flee == False:
-            os.system("cls")
+            utils.clearScreen()
             item_reward = self.monster_reward(current_monster)
 
             success_msg("You have successfully eradicated the monster!")
@@ -427,7 +427,7 @@ class Game:
             print("")
             time.sleep(3)
         elif self.current_health == 0:
-            os.system("cls")
+            utils.clearScreen()
             print(Fore.Red + settings.DEAD_TXT)
             error_msg("You died!")
             input(Fore.GREEN + "Enter any keys to resurrect ")
@@ -494,7 +494,7 @@ class Game:
             time.sleep(1)
 
         if self.current_health == 0:
-            os.system("cls")
+            utils.clearScreen()
             print(Fore.Red + settings.DEAD_TXT)
             error_msg("You died!")
             input(Fore.GREEN + "Enter any keys to resurrect ")
@@ -579,14 +579,14 @@ class Game:
     """
 
     def continue_gameplay(self):
-        os.system("cls")
+        utils.clearScreen()
         self.alert_msg(
             "Goal: You must reach Level 5 and get Good Items to Defeat the Boss!"
         )
         time.sleep(2.5)
 
         while True:
-            os.system("cls")
+            utils.clearScreen()
 
             self.draw_hunter()
             self.draw_hp_bar()
@@ -606,7 +606,7 @@ class Game:
                     self.fight_monster(current_monster)
 
                     if self.current_level > self.previous_level:
-                        os.system("cls")
+                        utils.clearScreen()
                         print(Fore.GREEN + settings.CONGRATS_TXT)
                         print(
                             Fore.CYAN
@@ -634,7 +634,7 @@ class Game:
                     pass
                 elif action == 3:
                     # Save first before it quits
-                    os.system("cls")
+                    utils.clearScreen()
                     self.update_status()
                     success_msg("Game has been saved.")
 
@@ -650,7 +650,7 @@ class Game:
 
     # First Epilogue: AN OLD MAN'S TALE
     def first_epilogue(self):
-        os.system("cls")
+        utils.clearScreen()
         print(Fore.CYAN + "⮞ FIRST EPILOGUE: AN OLD MAN'S TALE")
 
         epilogue_texts = settings.EPILOGUE_ONE
@@ -684,7 +684,7 @@ class Game:
 
         time.sleep(5)
 
-        os.system("cls")
+        utils.clearScreen()
 
         print(Fore.RED + settings.TITLE)
         print(
@@ -695,7 +695,7 @@ class Game:
 
     # Second Epilogue: THE HUNTER'S TRIALS
     def second_epilogue(self):
-        os.system("cls")
+        utils.clearScreen()
         print(Fore.CYAN + "⮞ SECOND EPILOGUE: THE HUNTER'S TRIALS")
 
         self.epilogue_msg(settings.EPILOGUE_TWO[0], 0)

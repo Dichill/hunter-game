@@ -1,12 +1,12 @@
 {
     "name": "Churchill",
-    "level": 8,
-    "exp": 70,
+    "level": 9,
+    "exp": 0,
     "weapon": "Bow of Apollo",
     "epilogue": 2,
     "health": 100,
     "potion": 21,
     "type": "Bow",
-    "monster_killed": 20,
-    "total_dmgs": 760
+    "monster_killed": 21,
+    "total_dmgs": 796
 }
