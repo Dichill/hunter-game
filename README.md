@@ -1,6 +1,10 @@
 ## HOW TO PLAY
 1. pip install -r requirements.txt
 2. python game.py
+3. Get to Level 5
+4. Get Legendary Weapon
+5. Defeat Boss
+6. W
 
 # DEMO
 https://www.youtube.com/watch?v=6W41NibWfnk
