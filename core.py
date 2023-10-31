@@ -553,7 +553,7 @@ class Game:
         time.sleep(2.5)
         error_msg("Are you prepared?".upper())
         time.sleep(1.5)
-        tnc = input(Fore.WHITE + "[Hunter] Dichill (Y/n) ⮞ ")
+        tnc = input(Fore.WHITE + f"[Hunter] {self.current_name} (Y/n) ⮞ ")
 
         if tnc.lower() == "y":
             utils.clearScreen()
