@@ -132,7 +132,7 @@ BOSS = ["WithYouWithMe"]
 BOSS_DROP = [
     "The Undefeatable"
 ]  # What drop should the boss give? In this case its a title.
-BOSS_HP = 10
+BOSS_HP = 200
 BOSS_FIGHT_BACK = [0.65]
 BOSS_DMG = [69]
 
